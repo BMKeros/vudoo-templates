@@ -1,5 +1,5 @@
 {
-  "name": "{{name_project}}",
+  "name": "{{module_name}}",
   "version": "1.0.0",
   "description": "{{description}}",
   "main": "main.js",
