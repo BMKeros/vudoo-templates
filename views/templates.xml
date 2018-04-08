@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <data>
+        <template id="index" name="index">
+            <html>
+            <head>
+                <t t-call="{{module_name}}.assets_css" />
+                <title>{{capitalize module_name}}</title>
+            </head>
+            <body>
+                <div id="app"></div>
+                <t t-call="{{module_name}}.assets_js" />
+            </body>
+            </html>
+        </template>
+    </data>
+</odoo>
