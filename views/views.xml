@@ -1,4 +1,4 @@
-<odoo>
+<openerp>
   <data>
     <!-- explicit list view definition -->
     <!--
@@ -56,4 +56,4 @@
               action="/home/hostelix/vudoo-templates/test.action_server"/>
     -->
   </data>
-</odoo>
+</openerp>

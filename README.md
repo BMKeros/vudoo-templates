@@ -1,2 +1,3 @@
 # vudoo-templates
-Templates for vudoo CLI
+=================
+##Odoo 9 template created with vudoo-cli
