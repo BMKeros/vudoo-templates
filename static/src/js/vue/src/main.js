@@ -1,11 +1,11 @@
 import Vue from 'vue';
-import App from './components/App';
+import HelloWorld from './components/HelloWorld';
 import store from './store'
 
-//Vue.component('name-component', Component);
+Vue.component('hello-world', HelloWorld);
 
 new Vue({
 	el: '#app',
   	store,
-	render: h => h(App)
+	render: h => h(HelloWorld)
 });
