@@ -13,7 +13,7 @@
     'category': 'Vudoo',
     'version': '0.1',
     'depends': [
-        'base'
+        'base',
         'website'
     ],
     'data': [
