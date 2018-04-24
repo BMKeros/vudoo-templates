@@ -1,6 +1,9 @@
 <template>
 	<div>
-		<p>Hello Vudoo :D</p>
+		<p>New Module {{module_name}}</p>
+		<footer>
+			<span>Was created by {{'author'}}</span>
+		</footer>
 	</div>
 </template>
 
