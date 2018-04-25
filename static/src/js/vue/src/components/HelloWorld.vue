@@ -1,26 +1,35 @@
 <template>
-	<div>
-		<sui-grid celled>
+	<div style="width:50%; margin-left:25%; margin-top:5%;" centered>
+		<sui-grid celled class="ui middle aligned centered grid">
 			<sui-grid-row>
-				<sui-grid-column :width="4">
-					<sui-message icon="folder"
-								 header="Se a creado el modulo {{module_name}} Con exito!"
-								 content="Usando Vuex integrado con Odoo."/>
-				</sui-grid-column>
-			</sui-grid-row>
-			
-			<sui-grid-row>
-				<sui-grid-column :width="4">
-					<sui-card>
-						<sui-card-content :width="4">
-							<sui-card-header>Module creado fue creado por {{author}}
-								<sui-icon class="right floated" size="small" name="star" />
-							</sui-card-header>
-							<sui-card-description>
-								<p>{{description}}</p>
-							</sui-card-description>
-						</sui-card-content>
-					</sui-card>
+				<sui-grid-column class="column" :width="15">
+					<sui-grid>
+						<sui-grid-row>
+							<sui-grid-column :width="13" centered>
+								<sui-message icon="folder"
+											header="Se a creado el modulo NewAppSemantic Con exito!"
+											content="Usando Vuex integrado con Odoo."/>
+							</sui-grid-column>
+						</sui-grid-row>
+						<sui-grid-row>
+							<sui-grid-column centered :width="8">
+								<sui-card>
+									<sui-card-content :width="8">
+										<sui-card-header>Y este modulo fue creado por Danielsassaa
+											<sui-icon class="right floated" size="small" name="star" />
+										</sui-card-header>
+										<sui-card-description>
+											<p>Algo que describir</p>
+										</sui-card-description>
+
+										<sui-card-meta>
+											<p>Bajo la Licencia Mit</p>
+										</sui-card-meta>
+									</sui-card-content>
+								</sui-card>
+							</sui-grid-column>
+						</sui-grid-row>
+					</sui-grid>
 				</sui-grid-column>
 			</sui-grid-row>
 		</sui-grid>
