@@ -7,7 +7,7 @@
 						<sui-grid-row>
 							<sui-grid-column :width="13" centered>
 								<sui-message icon="folder"
-											header="Se a creado el modulo NewAppSemantic Con exito!"
+											header="Se a creado el modulo {{module_name}} Con exito!"
 											content="Usando Vuex integrado con Odoo."/>
 							</sui-grid-column>
 						</sui-grid-row>
@@ -15,15 +15,15 @@
 							<sui-grid-column centered :width="8">
 								<sui-card>
 									<sui-card-content :width="8">
-										<sui-card-header>Y este modulo fue creado por Danielsassaa
+										<sui-card-header>Y este modulo fue creado por {{author}}
 											<sui-icon class="right floated" size="small" name="star" />
 										</sui-card-header>
 										<sui-card-description>
-											<p>Algo que describir</p>
+											<p>{{description}}</p>
 										</sui-card-description>
 
 										<sui-card-meta>
-											<p>Bajo la Licencia Mit</p>
+											<p>{{license}}</p>
 										</sui-card-meta>
 									</sui-card-content>
 								</sui-card>
