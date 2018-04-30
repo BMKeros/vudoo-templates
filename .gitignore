@@ -9,6 +9,6 @@ out
 gen
 .idea/inspectionProfiles/
 .idea/modules.xml
+.idea/vcs.xml
 .idea/vudoo-templates.iml
 .idea/workspace.xml
-./nodel_module
