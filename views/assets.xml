@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
   <data>
-    <template id="assets_css" name="assets_css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css"></link>
-    </template>
+    <template id="assets_css" name="assets_css"></template>
 
     <template id="assets_js" name="assets_js">
       <script src="/{{module_name}}/static/src/js/dist/build.js"></script>
