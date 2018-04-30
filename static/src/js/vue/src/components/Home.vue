@@ -16,7 +16,7 @@
 
 <script>
 	export default {
-		name: 'hello-world',
+		name: 'home',
 	}
 </script>
 
