@@ -15,9 +15,9 @@
 </template>
 
 <script>
-	export default {
-		name: 'home',
-	}
+    export default {
+        name: 'hello-world',
+    }
 </script>
 
 <style>

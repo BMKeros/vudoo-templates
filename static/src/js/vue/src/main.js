@@ -1,14 +1,14 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify'
-import Home from './components/Home';
+import HelloWorld from './components/HelloWorld';
 import store from './store'
 import 'vuetify/dist/vuetify.min.css'
 
 Vue.use(Vuetify);
-Vue.component('home', Home);
+Vue.component('hello-world', HelloWorld);
 
 new Vue({
 	el: '#app',
   	store,
-	render: h => h(Home)
+	render: h => h(HelloWorld)
 });
