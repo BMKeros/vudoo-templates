@@ -4,7 +4,7 @@ from odoo.addons.web.controllers import main
 
 
 class Web(main.Home):
-    @http.route(["/hello-world"], auth="user")
+    @http.route(["/home"], auth="user")
     def index_{{module_name}}(self, **kwargs):
         session_uid = http.request.session.uid
 
