@@ -1,6 +1,6 @@
 const mutations = {
     LOAD_TASKS: (state, data) => {
-        state.tasks = data.map((item) => {
+        state.tasks = data.records.map((item) => {
             return {
                 id: item.id,
                 name: item.name,
