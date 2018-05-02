@@ -42,22 +42,30 @@ const webpackConfig = {
 
 //Rules
 webpackConfig.module.rules.push(
-    {
-        test: /\.css$/,
-        use: [
-            'vue-style-loader',
-            'css-loader'
-        ]
-    },
-    {
-        test: /\.vue$/,
-        use: 'vue-loader',
-    },
-    {
-        test: /\.js$/,
-        use: 'babel-loader',
-        exclude: /node_modules/,
-    }
+	{
+		test: /\.js$/,
+		use: 'babel-loader',
+		exclude: /node_modules/,
+	},
+	{
+		test: /\.vue$/,
+		use: 'vue-loader',
+	},
+	{
+		test: /\.css$/,
+		use: [
+			'vue-style-loader',
+			'css-loader'
+		]
+	},
+	{
+		test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+		loader: 'url-loader',
+	},
+	{
+		test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+		loader: 'url-loader',
+	}
 );
 
 if(__PROD__){

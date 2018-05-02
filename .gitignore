@@ -12,3 +12,4 @@ gen
 .idea/vcs.xml
 .idea/vudoo-templates.iml
 .idea/workspace.xml
+*.log
