@@ -24,9 +24,12 @@ const webpackConfig = {
             path.resolve('/'),
             'node_modules'
         ],
-        extensions: ['*','.js','.vue','.json']
+        extensions: ['*', '.js', '.vue', '.json'],
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        }
     },
-    plugins:[
+    plugins: [
         new webpack.DefinePlugin({
             'process.env': {
                 NODE_END: JSON.stringify(project.env)
@@ -43,6 +46,15 @@ const webpackConfig = {
 //Rules
 webpackConfig.module.rules.push(
     {
+        test: /\.js$/,
+        use: 'babel-loader',
+        exclude: /node_modules/,
+    },
+    {
+        test: /\.vue$/,
+        use: 'vue-loader',
+    },
+    {
         test: /\.css$/,
         use: [
             'vue-style-loader',
@@ -50,17 +62,16 @@ webpackConfig.module.rules.push(
         ]
     },
     {
-        test: /\.vue$/,
-        use: 'vue-loader',
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: 'url-loader',
     },
     {
-        test: /\.js$/,
-        use: 'babel-loader',
-        exclude: /node_modules/,
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url-loader',
     }
 );
 
-if(__PROD__){
+if (__PROD__) {
     webpackConfig.plugins.push(
         new UglifyJsPlugin({
             cache: true,
@@ -91,6 +102,6 @@ if(__PROD__){
             warningsFilter: (src) => true
         })
     )
-};
+}
 
 module.exports = webpackConfig;
