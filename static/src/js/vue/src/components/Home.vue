@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <v-app>
         <v-dialog v-model="dialog" max-width="500px">
             <v-btn color="primary" dark slot="activator" class="mb-2">New Task</v-btn>
             <v-card>
@@ -16,7 +16,8 @@
                                 <v-text-field label="User" v-model="editedTask.user"></v-text-field>
                             </v-flex>
                             <v-flex xs12 sm6 md4>
-                                <v-text-field label="Date Deadline" v-model="editedTask.date_deadline"></v-text-field>
+                                <v-text-field label="Date Deadline"
+                                              v-model="editedTask.date_deadline"></v-text-field>
                             </v-flex>
                             <v-flex xs12 sm6 md4>
                                 <v-text-field label="Done?" v-model="editedTask.is_done"></v-text-field>
@@ -56,7 +57,7 @@
                 <v-btn color="primary" @click="initialize">Reset</v-btn>
             </template>
         </v-data-table>
-    </div>
+    </v-app>
 </template>
 
 <script>
