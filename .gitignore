@@ -11,3 +11,7 @@ gen
 .idea/modules.xml
 .idea/vudoo-templates.iml
 .idea/workspace.xml
+*.log
+*.swa
+*.swo
+*.swp
