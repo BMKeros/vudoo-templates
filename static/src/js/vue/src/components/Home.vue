@@ -38,12 +38,12 @@
                 hide-actions
                 class="elevation-1"
         >
-            <template slot="tasks" slot-scope="props">
-                <td>{{ props.task.id }}</td>
-                <td class="text-xs-right">{{ props.task.name }}</td>
-                <td class="text-xs-right">{{ props.task.user }}</td>
-                <td class="text-xs-right">{{ props.task.date_deadline }}</td>
-                <td class="text-xs-right">{{ props.task.is_done }}</td>
+            <template slot="items" slot-scope="props">
+                <td>{{ props.item.id }}</td>
+                <td class="text-xs-right">{{ props.item.name }}</td>
+                <td class="text-xs-right">{{ props.item.user }}</td>
+                <td class="text-xs-right">{{ props.item.date_deadline }}</td>
+                <td class="text-xs-right">{{ props.item.is_done }}</td>
                 <td class="justify-center layout px-0">
                     <v-btn icon class="mx-0" @click="editTask(props.task)">
                         <v-icon color="teal">edit</v-icon>
