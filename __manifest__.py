@@ -21,5 +21,6 @@
         'views/assets.xml',
         'views/views.xml',
         'views/templates.xml',
+        'data/todo_data.xml'
     ]
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<odoo>
+    <record model="todo.task" id="task_1">
+        <field name="name">Reinstall Odoo</field>
+        <field name="user_id" eval="ref('base.user_root')"/>
+        <field name="date_deadline">2015-01-30</field>
+        <field name="is_done" eval="False"/>
+    </record>
+    <record model="todo.task" id="task_2">
+        <field name="name">Install Vue</field>
+        <field name="user_id" eval="ref('base.user_root')"/>
+        <field name="date_deadline">2018-01-30</field>
+        <field name="is_done" eval="True"/>
+    </record>
+    <record model="todo.task" id="task_3">
+        <field name="name">Upgrade OS</field>
+        <field name="user_id" eval="ref('base.user_root')"/>
+        <field name="date_deadline">2016-09-19</field>
+        <field name="is_done" eval="False"/>
+    </record>
+    <record model="todo.task" id="task_4">
+        <field name="name">Delete Database</field>
+        <field name="user_id" eval="ref('base.user_root')"/>
+        <field name="date_deadline">2018-10-30</field>
+        <field name="is_done" eval="False"/>
+    </record>
+</odoo>
