@@ -5,7 +5,7 @@ import store from './store'
 import 'vuetify/dist/vuetify.min.css'
 
 Vue.use(Vuetify);
-Vue.component('home', Home);
+Vue.component('demo', Home);
 
 new Vue({
 	el: '#app',
