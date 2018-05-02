@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "{{description}}",
   "main": "src/main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "{{git_repository}}"
@@ -19,25 +16,27 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "semantic-ui-css": "^2.3.1",
+    "semantic-ui-vue": "^0.2.8",
+    "vue": "^2.5.16",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "vue-loader": "^14.2.2",
+    "vue-style-loader": "^4.1.0",
     "babel-loader": "^7.1.4",
     "cross-env": "^5.1.4",
     "css-loader": "^0.28.11",
-    "vue": "^2.5.16",
-    "vue-loader": "^14.2.2",
-    "vue-style-loader": "^4.1.0",
     "vue-template-compiler": "^2.5.16",
-    "vuex": "^3.0.1",
-    "webpack": "^4.3.0",
-    "webpack-cli": "^2.0.13",
-    "semantic-ui-css": "^2.3.1",
-    "semantic-ui-vue": "^0.2.8"
-  },
-  "devDependencies": {
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
     "file-loader": "^1.1.11",
     "uglifyjs-webpack-plugin": "^1.2.4",
     "webpack-dev-server": "^3.1.1"
+    "webpack": "^4.3.0",
+    "webpack-cli": "^2.0.13"
   }
 }
