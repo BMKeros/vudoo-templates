@@ -16,3 +16,4 @@ gen
 *.swo
 *.swp
 *.orig
+static/src/js/vue/package-lock.json
