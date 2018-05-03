@@ -10,8 +10,8 @@ const mutations = {
             };
         });
     },
-    DIALOG: (state, data) => {
-        state.dialog = data;
+    TOGGLE_DIALOG: (state) => {
+        state.dialog = !state.dialog;
     }
 };
 

@@ -18,12 +18,9 @@ const actions = {
     loadTasks: ({ commit }) => {
         Task.all().then(result => commit('LOAD_TASKS', result));
     },
-    openDialog: ({ commit }) => {
-        commit('DIALOG', true);
+    toggleDialog: ({ commit }) => {
+        commit('TOGGLE_DIALOG');
     },
-    closeDialog: ({ commit }) => {
-        commit('DIALOG', false);
-    }
 };
 
 export default actions;
