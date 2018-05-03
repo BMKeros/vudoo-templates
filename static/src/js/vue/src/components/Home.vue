@@ -15,7 +15,6 @@
                             <v-flex xs12 sm6 md4>
                                 <v-text-field label="User" v-model="editedTask.user"></v-text-field>
                             </v-flex>
-                            `
                             <v-flex xs12 sm6 md4>
                                 <v-checkbox label="Date Deadline" v-model="editedTask.date_deadline"></v-checkbox>
                             </v-flex>
