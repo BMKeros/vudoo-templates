@@ -1,10 +1,10 @@
 <template>
     <v-app>
+        <v-btn color="primary" dark @onclick="openDialog" class="mb-2">New Task</v-btn>
         <v-dialog v-model="dialog" max-width="500px">
-            <v-btn color="primary" dark slot="activator" class="mb-2">New Task</v-btn>
             <v-card>
                 <v-card-title>
-                    <span class="headline">{{ formTitle }}</span>
+                    <span class="headline">{{{{ formTitle }}}}</span>
                 </v-card-title>
                 <v-card-text>
                     <v-container grid-list-md>
@@ -15,9 +15,9 @@
                             <v-flex xs12 sm6 md4>
                                 <v-text-field label="User" v-model="editedTask.user"></v-text-field>
                             </v-flex>
+                            `
                             <v-flex xs12 sm6 md4>
-                                <v-text-field label="Date Deadline"
-                                              v-model="editedTask.date_deadline"></v-text-field>
+                                <v-checkbox label="Date Deadline" v-model="editedTask.date_deadline"></v-checkbox>
                             </v-flex>
                             <v-flex xs12 sm6 md4>
                                 <v-text-field label="Done?" v-model="editedTask.is_done"></v-text-field>
@@ -39,11 +39,11 @@
                 class="elevation-1"
         >
             <template slot="items" slot-scope="props">
-                <td>{{ props.item.id }}</td>
-                <td class="text-xs-right">{{ props.item.name }}</td>
-                <td class="text-xs-right">{{ props.item.user }}</td>
-                <td class="text-xs-right">{{ props.item.date_deadline }}</td>
-                <td class="text-xs-right">{{ props.item.is_done }}</td>
+                <td>{{{{ props.item.id }}}}</td>
+                <td class="text-xs-right">{{{{ props.item.name }}}}</td>
+                <td class="text-xs-right">{{{{ props.item.user }}}}</td>
+                <td class="text-xs-right">{{{{ props.item.date_deadline }}}}</td>
+                <td class="text-xs-right">{{{{ props.item.is_done }}}}</td>
                 <td class="justify-center layout px-0">
                     <v-btn icon class="mx-0" @click="editTask(props.task)">
                         <v-icon color="teal">edit</v-icon>
@@ -86,11 +86,6 @@
                 'defaultTask'
             ])
         },
-        watch: {
-            /*dialog(val) {
-                val || this.close();
-            }*/
-        },
         mounted() {
             this.loadTasks();
         },
@@ -99,11 +94,11 @@
                 'createTask',
                 'editTask',
                 'removeTask',
-                'loadTasks'
+                'loadTasks',
+                'openDialog',
+                'closeDialog'
             ]),
             initialize: () => console.log("init"),
-            close: () => console.log('close'),
-            save: () => console.log('save')
         }
     }
 </script>
