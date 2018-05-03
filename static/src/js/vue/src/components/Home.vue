@@ -70,9 +70,9 @@
                 { text: 'Name', value: 'name' },
                 { text: 'Date Deadline', value: 'date_deadline' },
                 { text: 'Done?', value: 'is_done' },
+                { text: 'Actions', value: '', sortable: false }
             ]
         }),
-
         computed: {
             formTitle() {
                 //return this.editedIndex === -1 ? 'New Task' : 'Edit Task'
