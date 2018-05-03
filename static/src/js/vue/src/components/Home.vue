@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <v-btn color="primary" dark @onclick="openDialog" class="mb-2">New Task</v-btn>
+        <v-btn color="primary" dark @click="toggleDialog" class="mb-2">New Task</v-btn>
         <v-dialog v-model="dialog" max-width="500px">
             <v-card>
                 <v-card-title>
@@ -95,14 +95,9 @@
                 'editTask',
                 'removeTask',
                 'loadTasks',
-                'openDialog',
-                'closeDialog'
+                'toggleDialog'
             ]),
             initialize: () => console.log("init"),
         }
     }
 </script>
-
-
-<style>
-</style>
