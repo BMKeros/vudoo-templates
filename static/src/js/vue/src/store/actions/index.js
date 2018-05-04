@@ -7,8 +7,9 @@ const actions = {
         Task.create(data).then(result => dispatch('loadTasks'));
     },
     editTask: ({ commit, dispatch }, data) => {
-        commit('DIALOG', false);
-        Task.write(data).then(result => dispatch('loadTasks'));
+        commit('LOAD_EDITED_TASK', data);
+        dispatch('toggleDialog');
+        //Task.write(data).then(result => dispatch('loadTasks'));
     },
     deleteTask: ({ dispatch }, data) => {
         if (confirm('Are you sure you want to delete this task?')) {
