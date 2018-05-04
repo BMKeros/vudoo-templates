@@ -39,9 +39,7 @@
               <v-container>
                 <v-layout align-center>
                   <v-flex>
-                    <h3 class="display-3">Welcome to Odoo WebSite</h3>
-                    <span class="subheading"></span>
-                    <v-divider class="my-3"></v-divider>
+                    <h3>Welcome to Odoo WebSite</h3>
                     <div class="title mb-6">This Module was created by {{author}}!
                       <p>Under the {{license}} license</p>
                     </div>
