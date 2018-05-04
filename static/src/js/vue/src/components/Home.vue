@@ -36,7 +36,7 @@
         >
           <v-flex>
             <v-jumbotron color="grey lighten-2">
-              <v-container fill-height>
+              <v-container>
                 <v-layout align-center>
                   <v-flex>
                     <h3 class="display-3">Welcome to Odoo WebSite</h3>
