@@ -1,41 +1,41 @@
 {
-	"name": "{{module_name}}",
-	"version": "1.0.0",
-	"description": "{{description}}",
-	"main": "src/main.js",
-	"scripts": {
-		"dev": "webpack -w --config webpack.config.js",
-		"build": "webpack --mode development",
-		"build:prod": "webpack --mode production"
-	},
-	"repository": {
-		"type": "git",
-		"url": "{{git_repository}}"
-	},
-	"author": "{{author}}",
-	"license": "{{license}}",
-	"dependencies": {
-		"axios": "^0.18.0",
-		"vue": "^2.5.16",
-		"vuex": "^3.0.1",
-		"vuetify": "^1.0.17"
-	},
-	"devDependencies": {
-		"babel-core": "^6.26.0",
-		"babel-loader": "^7.1.4",
-		"babel-plugin-transform-object-rest-spread": "^6.26.0",
-		"babel-preset-env": "^1.6.1",
-		"cross-env": "^5.1.4",
-		"css-loader": "^0.28.11",
-		"extract-text-webpack-plugin": "^4.0.0-beta.0",
-		"file-loader": "^1.1.11",
-		"url-loader": "^1.0.1",
-		"style-loader": "^0.21.0",
-		"uglifyjs-webpack-plugin": "^1.2.4",
-		"vue-loader": "^14.2.2",
-		"vue-style-loader": "^4.1.0",
-		"vue-template-compiler": "^2.5.16",
-		"webpack": "^4.3.0",
-		"webpack-cli": "^2.0.13"
-	}
+  "name": "{{module_name}}",
+  "version": "1.0.0",
+  "description": "{{description}}",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "webpack -w --config webpack.config.js",
+    "build": "webpack --mode development",
+    "build:prod": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "{{git_repository}}"
+  },
+  "author": "{{author}}",
+  "license": "{{license}}",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vue": "^2.5.16",
+    "vuex": "^3.0.1",
+    "vuetify": "^1.0.17"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "cross-env": "^5.1.4",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "url-loader": "^1.0.1",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "vue-loader": "^14.2.2",
+    "vue-style-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.3.0",
+    "webpack-cli": "^2.0.13"
+  }
 }
