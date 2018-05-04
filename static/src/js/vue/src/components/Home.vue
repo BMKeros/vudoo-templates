@@ -1,7 +1,7 @@
 <template>
     <v-app>
         <v-btn color="primary" dark @click="toggleDialog" class="mb-2">New Task</v-btn>
-        <v-dialog v-model="dialog" max-width="500px">
+        <v-dialog v-model="dialog" max-width="500px" persistent>
             <v-card>
                 <v-card-title>
                     <span class="headline">\{{ formTitle }}</span>
@@ -16,10 +16,10 @@
                                 <v-text-field label="User" v-model="editedTask.user"></v-text-field>
                             </v-flex>
                             <v-flex xs12 sm6 md4>
-                                <v-checkbox label="Date Deadline" v-model="editedTask.date_deadline"></v-checkbox>
+                                <v-text-field label="Date Deadline" v-model="editedTask.date_deadline"></v-text-field>
                             </v-flex>
                             <v-flex xs12 sm6 md4>
-                                <v-text-field label="Done?" v-model="editedTask.is_done"></v-text-field>
+                                <v-checkbox label="Done?" v-model="editedTask.is_done"></v-checkbox>
                             </v-flex>
                         </v-layout>
                     </v-container>
@@ -42,12 +42,15 @@
                 <td class="text-xs-right">\{{ props.item.name }}</td>
                 <td class="text-xs-right">\{{ props.item.user }}</td>
                 <td class="text-xs-right">\{{ props.item.date_deadline }}</td>
-                <td class="text-xs-right">\{{ props.item.is_done }}</td>
+                <td class="text-xs-right">
+                    <v-icon v-if="props.item.is_done" color="teal">check</v-icon>
+                    <v-icon v-else color="teal">clear</v-icon>
+                </td>
                 <td class="justify-center layout px-0">
-                    <v-btn icon class="mx-0" @click="editTask(props.task)">
+                    <v-btn icon class="mx-0" @click="editTask(props.item)">
                         <v-icon color="teal">edit</v-icon>
                     </v-btn>
-                    <v-btn icon class="mx-0" @click="deleteTask(props.task)">
+                    <v-btn icon class="mx-0" @click="deleteTask(props.item)">
                         <v-icon color="pink">delete</v-icon>
                     </v-btn>
                 </td>
