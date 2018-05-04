@@ -4,7 +4,7 @@
         <v-dialog v-model="dialog" max-width="500px" persistent>
             <v-card>
                 <v-card-title>
-                    <span class="headline">{{ formTitle }}</span>
+                    <span class="headline">\{{ formTitle }}</span>
                 </v-card-title>
                 <v-card-text>
                     <v-container grid-list-md>
@@ -61,10 +61,10 @@
                 class="elevation-1"
         >
             <template slot="items" slot-scope="props">
-                <td>{{ props.item.id }}</td>
-                <td class="text-xs-right">{{ props.item.name }}</td>
-                <td class="text-xs-right">{{ props.item.user }}</td>
-                <td class="text-xs-right">{{ props.item.date_deadline }}</td>
+                <td>\{{ props.item.id }}</td>
+                <td class="text-xs-right">\{{ props.item.name }}</td>
+                <td class="text-xs-right">\{{ props.item.user }}</td>
+                <td class="text-xs-right">\{{ props.item.date_deadline }}</td>
                 <td class="text-xs-right">
                     <v-icon v-if="props.item.is_done" color="green">check</v-icon>
                     <v-icon v-else color="red">clear</v-icon>
