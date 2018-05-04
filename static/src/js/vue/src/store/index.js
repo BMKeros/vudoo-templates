@@ -16,7 +16,13 @@ const state = {
         date_deadline: '',
         is_done: false
     },
-    currentAction: '',
+    defaultTask: {
+        user: '',
+        name: '',
+        date_deadline: '',
+        is_done: false
+    },
+    currentAction: 'create',
 };
 
 export default new Vuex.Store({
