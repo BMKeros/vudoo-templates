@@ -1,6 +1,6 @@
 const mutations = {
-    LOAD_TASKS: (state, data) => {
-        state.tasks = data.records.map((item) => {
+    LOAD_TASKS: (state, payload) => {
+        state.tasks = payload.records.map((item) => {
             return {
                 id: item.id,
                 name: item.name,
@@ -13,8 +13,14 @@ const mutations = {
     TOGGLE_DIALOG: (state) => {
         state.dialog = !state.dialog;
     },
-    LOAD_EDITED_TASK: (state, data) => {
-        state.editedTask = Object.assign({}, data);
+    LOAD_EDITED_TASK: (state, payload) => {
+        state.editedTask = { ...payload };
+    },
+    CHANGE_ACTION_FORM: (state, payload) => {
+        state.currentAction = payload;
+    },
+    CLEAR_FORM: (state) => {
+        state.editedTask = Object.assign({}, state.defaultTask);
     }
 };
 
