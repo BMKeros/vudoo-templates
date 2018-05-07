@@ -39,10 +39,10 @@
               <v-container>
                 <v-layout align-center>
                   <v-flex>
-                    <h3 class="display-3">Welcome to Odoo WebSite</h3>
                     <span class="subheading"></span>
-                    <v-divider class="my-3"></v-divider>
-                    <div class="title mb-6">This Module was created by {{author}}!
+                    <div class="title mb-6">
+                      <h3 class="display-3">Welcome to Odoo WebSite</h3>
+                      This Module was created by {{author}}!
                       <p>Under the {{license}} license</p>
                     </div>
                     <v-layout row justify-center>
