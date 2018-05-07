@@ -63,18 +63,16 @@
             </v-container>
           </v-jumbotron>
         </v-flex>
-      </v-layout>
-    </v-container>
-    <v-container grid-list-xl text-xs-center>
-      <v-flex xs10 offset-xs1>
-        <v-footer color="indigo" app>
+        <v-flex xs10 offset-xs1>
+          <v-footer color="indigo" app>
           <span class="white--text">&copy; Made with the heart!
             <v-btn flat icon color="pink">
               <v-icon>favorite</v-icon>
             </v-btn>
           </span>
-        </v-footer>
-      </v-flex>
+          </v-footer>
+        </v-flex>
+      </v-layout>
     </v-container>
   </v-app>
 </template>
